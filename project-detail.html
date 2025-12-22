@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Dawning+of+a+New+Day&family=Jaldi:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sarina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Dawning+of+a+New+Day&family=Jaldi:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sarina&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Dawning+of+a+New+Day&family=Jaldi:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Sarina&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project-detail.css">
+    <link rel="stylesheet" href="styles/default.css">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+        <ul class="nav-contents">
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+
+        <h1 id="logo">cnkc</h1>
+
+        <div class="social-icons">
+    <a href="mailto:yarencnk03@gmail.com" data-tooltip="Mail me!">
+        <img src="images/envelope.svg" alt="Email">
+    </a>
+    
+    <a href="https://github.com/ycnkc" data-tooltip="My GitHub" target="_blank">
+        <img src="images/github-logo.svg" alt="GitHub">
+    </a>
+    
+    <a href="https://linkedin.com/in/yarencnkc" data-tooltip="Let's connect!" target="_blank">
+        <img src="images/linkedin-logo.svg" alt="LinkedIn">
+    </a>
+</div>
+        </div>
+    </nav>
+
+<main class="detail-wrapper">
+        <a href="portfolio.html" class="back-btn">← Back to Portfolio</a>
+
+        <div class="project-header">
+            <div class="project-visual" id="project-visual"></div>
+            <div class="project-content">
+                <span class="project-category" id="project-category"></span>
+                <h1 id="project-title"></h1>
+                <div class="tag-container" id="tag-container"></div>
+                <div class="project-body" id="project-description"></div>
+            </div>
+        </div>
+    </main>
+<script>
+        // 1. URL'den Proje ID'sini Al
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+
+        // 2. JSON Verisini Çek
+        fetch('projects.json')
+            .then(res => res.json())
+            .then(projects => {
+                const project = projects.find(p => p.id === id);
+                
+                if (project) {
+                    document.getElementById('project-title').innerText = project.title;
+                    document.getElementById('project-category').innerText = project.category.toUpperCase();
+                    document.getElementById('project-description').innerHTML = `<p>${project.longDesc || project.shortDesc}</p>`;
+                    
+                    // Tagleri Oluştur
+                    const tagsDiv = document.getElementById('tag-container');
+                    project.tags.forEach(tag => {
+                        tagsDiv.innerHTML += `<span class="tag-item">${tag}</span>`;
+                    });
+
+                    // Görsel veya Placeholder Kontrolü
+                    const visualDiv = document.getElementById('project-visual');
+                    if (project.image && project.image !== "") {
+                        visualDiv.innerHTML = `<img src="${project.image}" alt="${project.title}">`;
+                    } else {
+                        // DATABASE veya PHISHING için görsel yoksa harf göster
+                        visualDiv.innerHTML = `<div class="placeholder-text">${project.title.charAt(0)}</div>`;
+                    }
+                }
+            });
+    </script>
+</body>
+</html>
