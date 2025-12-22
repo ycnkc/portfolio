@@ -1,0 +1,202 @@
+@media screen and (max-width: 900px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .nav-wrapper {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+    #logo {
+        position: relative;
+        left: 0;
+        transform: none;
+        margin-bottom: 10px;
+    }
+    .nav-contents {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .hero-text {
+        height: auto;
+        min-height: 60vh;
+        padding-top: 50px;
+    }
+    .hero-text h1 {
+        font-size: 42px !important; 
+        margin-top: 20px;
+        line-height: 1.2;
+    }
+    .hero-text p {
+        position: relative !important; 
+        margin: 20px auto !important;
+        left: 0;
+        width: 90%;
+    }
+    .star {
+        display: block !important;
+        z-index: -1;
+        opacity: 1;
+    }
+    .star-1 { top: 10%; left: 5%; width: 30px; }
+    .star-2 { top: 20%; right: 5%; left: auto; width: 25px; }
+    .star-3 { top: 50%; left: 5%; width: 35px; }
+    .star-5 { top: 85%; left: 15%; width: 70px; }       
+
+    
+    .cta {
+        width: 20px;
+        height: auto;
+        margin-right: 45%;
+        transform: translateX(-50%);
+        top: 50px;
+    }
+
+    .portrait {
+        position: relative !important;
+        top: -40px !important;
+        right: -60px !important;
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .portrait img { width: 220px; }
+
+    
+    .work-section {
+        margin-top: 100px !important; 
+        padding: 40px 20px 100px 20px;
+        position: relative; 
+    }
+
+    
+    .tab-header {
+        position: absolute !important;
+        top: -50px !important; 
+        left: 200px !important;
+        right: 0 !important; 
+        width: 100% !important;
+        padding: 15px 30px !important; 
+        
+        border-radius: 30px 30px 0 0 !important; 
+        display: flex;
+        align-items: left;
+        justify-content: space-between; 
+    }
+
+    .tab-title {
+        font-size: 22px !important;
+    }
+    .wave-line {
+        width: 100px !important; 
+    }
+
+    .work-container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #project-card1 img, #project-card2 img{
+        width: 100%;
+    }
+
+    #card-wave {
+    width: 40% !important; 
+}
+
+    #project-card1, #project-card2 {
+        width: 100%;
+        margin-top: 30px !important;
+        flex: none;
+    }
+    #portfolio-btn { width: 100%; margin-top: 30px; }
+
+
+    .about-section {
+       margin-top: 100px !important; 
+        padding: 40px 20px 40px 20px;
+        position: relative; 
+        
+    }
+    .about-tab {
+         position: absolute !important;
+        top: -50px !important; 
+        left: 200px !important;
+        right: 0 !important; 
+        width: 100% !important;
+        padding: 15px 30px !important;
+        margin-top: -90px; 
+        border-radius: 30px 30px 0 0 !important; 
+        display: flex;
+        align-items: left;
+        justify-content: space-between; 
+    }
+    .about-container {
+        flex-direction: column-reverse; 
+        gap: 30px;
+        padding: 0;
+        margin-top: -50px;
+    }
+
+    .about-container h2 {
+        font-size: 35px;
+    }
+    .about-image img { width: 100%; max-width: 250px; }
+
+
+    .wip-section {
+        padding: 60px 20px;
+        margin-top: 50px;
+    }
+    .wip-tab {
+        position: absolute !important;
+        top: -50px !important;
+        left: -200px;
+        right: 0;
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 30px 30px 0 0;
+    }
+    .notebook-content {
+        position: relative !important; 
+        top: 0 !important;
+        left: 0 !important;
+        transform: none !important;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+    .notebook-img {
+        display: none;
+    }
+
+
+    #notebook-star{
+       top: -60px;
+    }
+
+    #notebook-star2{
+        top: -30px;
+    }
+    
+    .sticky-notes {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #note1, #note2 {
+        width: 100%;
+        max-width: 280px;
+        height: 280px;
+        margin-top: 0 !important;
+        background-size: contain;
+    }
+}

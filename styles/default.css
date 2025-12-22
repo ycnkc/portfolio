@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 :root {
     --bg-color: #FEF7F1; 
     --accent-green: #91EAC8; 
@@ -23,6 +24,7 @@ html, body {
     overflow-x: hidden; 
   overflow-y: scroll;
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 html {
@@ -117,5 +119,33 @@ text-underline-position: from-font;
 .social-icons a:hover::after {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0); /* Yukarı süzülerek gelir */
+    transform: translateX(-50%) translateY(0); 
+}
+
+.reveal {
+    opacity: 0;
+    /* Değeri 40px'ten 120px'e çıkardık, böylece daha aşağıdan başlar */
+    transform: translateY(110px); 
+    
+    /* Süreyi biraz uzattık (1s) ve daha pürüzsüz bir ivme (cubic-bezier) ekledik */
+    transition: opacity 1.2s ease-out, transform 1s cubic-bezier(0.2, 0.6, 0.3, 1);
+    
+    will-change: transform, opacity;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#note2.reveal {
+    transition-delay: 0.2s;
+}
+
+#notebook-star2 {
+    transition-delay: 0.2s;
+}
+
+#project-card2.reveal {
+    transition-delay: 0.2s;
 }

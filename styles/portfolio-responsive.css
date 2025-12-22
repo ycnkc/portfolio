@@ -1,0 +1,51 @@
+@media screen and (max-width: 900px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .nav-wrapper {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+    #logo {
+        position: relative;
+        left: 0;
+        transform: none;
+        margin-bottom: 10px;
+    }
+    .nav-contents {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .portfolio-container { margin-top: 80px; }
+    
+    .tabs {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tab-link {
+        padding: 15px 25px; 
+        font-size: 18px;
+        margin-left: -15px;
+    }
+
+    .tab-link.active {
+        padding-top: 25px;
+        margin-top: -10px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+
+    .tab-content-wrapper {
+        padding: 40px 20px;
+    }
+}

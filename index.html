@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/about-style.css">
     <link rel="stylesheet" href="/styles/wip-style.css">
     <link rel="stylesheet" href="/styles/default.css">
+    <link rel="stylesheet" href="styles/index-responsive.css">
 </head>
 <body>
     <nav>
@@ -22,7 +23,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
-
+        
         <h1 id="logo">cnkc</h1>
 
         <div class="social-icons">
@@ -51,14 +52,15 @@
             <div class="hero-text">
             <h1>yaren çanakçıoğlu</h1>
             <p>junior developer & designer</p>
+            <a href="portfolio.html" class="cta">
+                <img src="images/cta-btn.svg" alt="Portfolio">
+            </a>
             </div>
 
             <img src="images/star.svg" class="star star-5" alt="">
 
 
-            <a href="portfolio.html" class="cta">
-        <img src="images/cta-btn.svg" alt="Portfolio">
-            </a>
+            
 
             <div class="portrait">
             <img src="images/yaren.png" alt="Portrait of Yaren">
@@ -74,17 +76,17 @@
     </div>
 
     <div class="work-container">
-        <div id="project-card1">
+        <div id="project-card1" class="reveal">
              <img src="images/ichigo.png" alt="Project">
              <h3>Ichigo Matcha</h3>
-             <img src="images/wave.svg" alt="">
+             <img src="images/wave.svg" alt="" id="card-wave">
              <p>Branding & UI exploration for a Japanese-themed cafe concept</p>
         </div>
         
-        <div id="project-card2">
+        <div id="project-card2" class="reveal">
                 <img src="images/weather.png" alt="Project">
                 <h3>Weather Widget</h3>
-                <img src="images/wave.svg" alt="">
+                <img src="images/wave.svg" alt="" id="card-wave">
                 <p>A minimalist desktop weather companion built with Electron.js</p>
             </div>
     </div>
@@ -103,14 +105,14 @@
 
     <div class="about-container">
         <div class="about-image">
-            <img src="images/pixel-yaren.png" alt="Pixel Art Me">
+            <img src="images/pixel-yaren.png" alt="Pixel Art Me" class="reveal">
         </div>
 
         <div class="about-text">
-            <h2>hi! i’m yaren.</h2>
-            <p>I’m a senior Computer Engineering student at Istanbul Arel University and a junior developer and designer.</p>
-            <p>I enjoy creating aesthetic digital experiences by crafting my own assets.</p>
-            <p>I’m constantly learning and improving by building small projects and experimenting with new ideas.</p>
+            <h2 class="reveal">hi! i’m yaren.</h2>
+            <p class="reveal">I’m a senior Computer Engineering student at Istanbul Arel University and a junior developer and designer.</p>
+            <p class="reveal">I enjoy creating aesthetic digital experiences by crafting my own assets.</p>
+            <p class="reveal">I'm constantly learning and improving by building small projects and experimenting with new ideas.</p>
         </div>
     </div>
 </section>
@@ -125,17 +127,17 @@
         <img src="images/notebook.png" alt="Notebook Design" class="notebook-img">
         
         <div class="notebook-content">
-            <h2 id="notebook-header">yaren's to-do list</h2>
-            <img src="images/star.svg" alt="" id="notebook-star">
-            <img src="images/star.svg" alt="" id="notebook-star2">
+            <h2 id="notebook-header" class="reveal">yaren's to-do list</h2>
+            <img src="images/star.svg" alt="" id="notebook-star" class="reveal">
+            <img src="images/star.svg" alt="" id="notebook-star2" class="reveal">
             
             <div class="sticky-notes">
-                <div id="note1">
+                <div id="note1" class="reveal">
                     <h3><img src="images/checkbox.svg" alt=""> Focus Café</h3>
                     <p>a coffeshop themed productivity app</p>
                 </div>
 
-                <div id="note2">
+                <div id="note2" class="reveal">
                     <h3><img src="images/checkbox.svg" alt=""> Sage - Welness App</h3>
                     <p>a welness app for mindfulness and self-care</p>
                 </div>
@@ -146,6 +148,6 @@
 </section>
 
     </main>
-        
+        <script src="scripts/default.js"></script>
 </body>
 </html>

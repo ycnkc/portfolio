@@ -23,23 +23,21 @@
 }
 
 .hero-text p {
-    position: absolute;
+    position: relative;
 
     color: var(--text-black);
     text-align: center;
     font-family: 'Sarabun', sans-serif;
     font-size: 24px;
-    margin-top: 100px;
+    margin-top: -30px;
     margin-left: 35px;
     animation: text-float 4s ease-in-out infinite;
 
 }
 
 .cta {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: -150px;
+    position: relative;
+    top: 100px;
 }
 
 .cta img {

@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .nav-wrapper {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+    #logo {
+        position: relative;
+        left: 0;
+        transform: none;
+        margin-bottom: 10px;
+    }
+    .nav-contents {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .project-header {
+        grid-template-columns: 1fr; /* 1fr 1fr'den teke düştü */
+        gap: 30px;
+    }
+
+    .project-content h1 {
+        font-size: 2.5rem; /* 4rem'den düşürüldü */
+    }
+
+    .project-visual {
+        height: 300px; /* 500px sabit yükseklik mobilde çok büyük */
+        border-radius: 30px;
+    }
+
+    .placeholder-text {
+        font-size: 3rem;
+    }
+
+    .detail-wrapper {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+}
