@@ -18,6 +18,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    animation: text-float 4s ease-in-out infinite;
+    
 }
 
 .hero-text p {
@@ -29,6 +31,8 @@
     font-size: 24px;
     margin-top: 100px;
     margin-left: 35px;
+    animation: text-float 4s ease-in-out infinite;
+
 }
 
 .cta {
@@ -42,11 +46,11 @@
     width: 200px;
     height: auto;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .cta img:hover {
-    opacity: 0.5;
-    transition: 0.5s;
+    transform: translateY(5px);
 }
 
 .portrait {
@@ -54,12 +58,22 @@
     right: 50px;
     top: 450px;
     right: 100px;
+    
+}
+
+.portrait img{
+    transition: all 0.3s ease-in-out;
+}
+
+.portrait img:hover {
+    transform: translateY(10px);
 }
 
 .star {
     position: absolute;
     width: 30px; 
     height: auto;
+    animation: float 4s ease-in-out infinite;
 }
 
 .star-1 { top: 56%; left: 12%; width: 70px; } 
@@ -67,3 +81,28 @@
 .star-3 { top: 31%; left: 80%; width: 50px; transform: rotate(114.951deg);}              
 .star-4 { top: 24%; right: 13%; width: 70px; transform: rotate(114.951deg);}  
 .star-5 { top: 85%; left: 35%; width: 70px; }       
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(10deg); 
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes text-float {
+   0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px) ; 
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    
+}

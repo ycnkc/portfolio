@@ -46,9 +46,12 @@ html {
     font-size: 18px;
 }
 
+.nav-contents li{
+    transition: all 0.3s ease-in-out;
+}
+
 .nav-contents li:hover{
-    opacity: 0.5;
-    transition: 0.3s;
+    transform: translateY(5px);
 }
 
 
@@ -70,14 +73,49 @@ text-underline-position: from-font;
     transform: translateX(-50%);
 }
 
+.social-icons a {
+    display: inline-block; 
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
 .social-icons img {
     width: 30px;
     height: 30px;
-    margin-left: 10px;
+    display: block; 
     cursor: pointer;
 }
 
 .social-icons a:hover {
-    opacity: 0.5;
-    transition: 0.3s;
+    transform: translateY(-5px) rotate(5deg); 
+}
+
+.social-icons a::after {
+    content: attr(data-tooltip); 
+    position: absolute;
+    top: 120%; 
+    left: 50%;
+    transform: translateX(-50%) translateY(10px); 
+    
+    
+    background-color: #f9e74ab8;
+    color: var(--text-black);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: Sarabun;
+    white-space: nowrap; 
+    
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none; 
+}
+
+.social-icons a:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); /* Yukarı süzülerek gelir */
 }

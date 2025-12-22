@@ -87,6 +87,7 @@ margin: 0;
     line-height: normal;
     cursor: pointer;
     margin-top: 90px;
+    transition: all 0.3s ease-in-out;
 }
 
 #portfolio-btn:hover {
