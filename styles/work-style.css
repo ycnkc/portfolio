@@ -1,0 +1,97 @@
+
+.work-section {
+    background-color: var(--accent-green);  
+    padding: 40px 80px 200px 80px;
+    margin-top: 300px; 
+    position: relative;
+}
+
+.tab-header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -90px; 
+    right: 0;
+    background-color: var(--accent-green);
+    padding: 20px 400px 80px 60px;
+    border-radius: 50px 0 0 0; 
+    align-items: flex-start;
+}
+
+.tab-title{
+    color: #000;
+text-align: left;
+font-family: Sarabun;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+
+.wave-line {
+    display: block;
+    width: 154px;
+    height: auto;
+    margin-left: -15px;
+}
+
+
+.work-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    align-items: flex-start;
+}
+
+
+
+#project-card1 {
+    flex: 2;
+    margin-top: 80px;
+}
+
+#project-card2 {
+    flex: 1;
+}
+
+#project-card1 h3, #project-card2 h3 {
+    margin-top: 15px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--text-black);
+}
+
+
+#project-card1 p, #project-card2 p {
+    margin-top: 10px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+    color: var(--text-black);
+    margin-top: 40px;
+}
+
+#portfolio-btn {
+    border-radius: 100px;
+    border: none;
+    background: var(--text-black);
+    width: 244px;
+    height: 66px;
+    color: #FFF;
+    text-align: center;
+    font-family: Sarabun;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 90px;
+}
+
+#portfolio-btn:hover {
+    background-color: #FFF;
+    color: #000;
+    transition: 0.3s;
+}
+
