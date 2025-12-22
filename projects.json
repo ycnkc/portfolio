@@ -1,14 +1,156 @@
 [
-  { "id": "bloomy", "category": "developments", "title": "Bloomy", "shortDesc": "Pixel art bouquet maker", "tags": ["Pixel Art","HTML&CSS", "JS"], "image": "images/bloomy.webp" },
-  { "id": "ichigo-matcha", "category": "designs", "title": "Ichigo Matcha", "shortDesc": "Visual Identity Design", "tags": ["Branding", "Figma"], "image": "images/ichigo-ss.webp" },
-  { "id": "icu-stay", "category": "developments", "title": "ICU-Stay Prediction", "shortDesc": "Length of stay forecasting", "tags": ["Python", "AI"], "image": "images/icu.webp" },
-  { "id": "denim-website", "category": "designs", "title": "Denim Website", "shortDesc": "E-commerce UI Concept", "tags": ["UI/UX", "Web"], "image": "images/denim.webp" },
-  { "id": "ministeam", "category": "developments", "title": "Ministeam", "shortDesc": "Game distribution platform", "tags": ["Frontend", "HTML&CSS"], "image": "images/ministeam.webp" },
-  { "id": "natura", "category": "designs", "title": "Natura Skincare", "shortDesc": "Skincare Brand Design", "tags": ["Figma", "UI"], "image": "images/natura.webp" },
-  { "id": "phishing-detection", "category": "developments", "title": "Phishing Detection", "shortDesc": "Cyber security ML model", "tags": ["Security", "AI"], "image": "images/phishing.webp" },
-  { "id": "tamagotchi", "category": "developments", "title": "Tamagotchi", "shortDesc": "Virtual pet simulation game", "tags": ["Game Dev", "JS", "Electron.js"], "image": "images/tamagotchi.webp" },
-  { "id": "weather-widget", "category": "developments", "title": "Weather Widget", "shortDesc": "Dynamic weather dashboard", "tags": ["API", "HTML&CSS", "Electron.js"], "image": "images/weather-ss.webp" },
-  { "id": "skin-ai", "category": "developments", "title": "Skin-AI-App", "shortDesc": "Dermatology analysis tool", "tags": ["Full-stack", "AI"], "image": "images/skin-ai.webp" },
-  { "id": "steam-db", "category": "developments", "title": "Steam-like DB", "shortDesc": "Relational database management", "tags": ["Database", "SQL"], "image": "images/database.webp" },
-  { "id": "velore", "category": "designs", "title": "Velore Hotel UI", "shortDesc": "Luxury booking interface", "tags": ["UI/UX", "Hotel"], "image": "images/velore.webp" }
+  {
+    "id": "bloomy",
+    "category": "developments",
+    "title": "Bloomy",
+    "shortDesc": "Pixel art bouquet maker",
+    "longDesc": "Bloomy is an interactive web application that allows users to create their own pixel art flower bouquets. Users can customize bouquets by choosing different flower types, and paper colors. Built using the HTML Canvas API, the project focuses on drag-and-drop interactions, dynamic color palettes, and a cozy visual experience.",
+    "tags": ["Pixel Art", "HTML&CSS", "JS"],
+    "image": "images/bloomy.webp",
+    "gallery": [
+      "images/bloomy-2.webp",
+      "images/bloomy-3.webp"
+    ],
+    "githubLink": "https://github.com/ycnkc/bloomy",
+    "demoLink": "https://cnkcsbloomy.vercel.app/"
+  },
+  {
+    "id": "ichigo-matcha",
+    "category": "designs",
+    "title": "Ichigo Matcha",
+    "shortDesc": "Visual identity design",
+    "longDesc": "Ichigo Matcha is a visual identity design project created for a modern matcha brand. The project focuses on defining a consistent color palette, typography system, and brand mood that reflects a fresh and minimal aesthetic. The design was developed in Figma with an emphasis on brand coherence and visual storytelling.",
+    "tags": ["Branding", "Figma", "Visual Identity"],
+    "image": "images/ichigo-ss.webp",
+    "gallery": [
+      "images/ichigo-2.webp",
+      "images/ichigo-3.webp"
+    ]
+  },
+  {
+    "id": "icu-stay",
+    "category": "developments",
+    "title": "ICU-Stay Prediction",
+    "shortDesc": "Length of stay forecasting",
+    "longDesc": "ICU-Stay Prediction is a machine learning group project that aims to forecast the length of stay for patients in intensive care units. Using clinical data and statistical features, the model supports healthcare planning and resource allocation. The project was developed in Python, with a focus on data preprocessing, model training, evaluation, and collaborative development within a team environment.",
+    "tags": ["Python", "AI", "Machine Learning"],
+    "image": "images/icu.webp",
+    "gallery": [
+      "images/icu-2.webp"
+    ],
+    "githubLink": "https://github.com/DYcoded/icu-stay-prediction",
+    "demoLink": "https://icustay.streamlit.app/"
+  },
+  {
+    "id": "denim-website",
+    "category": "designs",
+    "title": "Denim Website",
+    "shortDesc": "E-commerce UI concept",
+    "longDesc": "This project is a conceptual e-commerce website design created for a denim brand. The focus is on clean layouts, product-focused visuals, and intuitive navigation to enhance the shopping experience. The interface was designed with usability and modern web design principles in mind.",
+    "tags": ["UI/UX", "Web Design", "E-commerce"],
+    "image": "images/denim.webp",
+    "gallery": [
+      "images/denim-2.webp",
+      "images/denim-3.webp"
+    ]
+  },
+  {
+    "id": "ministeam",
+    "category": "developments",
+    "title": "Ministeam",
+    "shortDesc": "Game distribution platform",
+    "longDesc": "Ministeam is a frontend-focused project inspired by digital game distribution platforms. It showcases a game library interface where users can browse titles and view details. The project emphasizes layout structure, responsive design, and clean UI implementation using HTML and CSS.",
+    "tags": ["Frontend", "HTML&CSS", "UI"],
+    "image": "images/ministeam.webp",
+    "gallery": [
+      "images/ministeam-2.webp"
+    ],
+    "githubLink": "https://github.com/ycnkc/ministeam"
+  },
+  {
+    "id": "natura",
+    "category": "designs",
+    "title": "Natura Skincare",
+    "shortDesc": "Skincare brand design",
+    "longDesc": "Natura Skincare is a UI and brand design project created for a skincare brand with a natural and minimal identity. The design focuses on soft colors, clean typography, and a calm visual language that reflects trust and simplicity. All screens were designed in Figma with consistency across components.",
+    "tags": ["Figma", "UI Design", "Branding"],
+    "image": "images/natura.webp",
+    "gallery": [
+      "images/natura-2.webp",
+      "images/natura-2.webp"
+    ]
+  },
+  {
+    "id": "phishing-detection",
+    "category": "developments",
+    "title": "Phishing Detection",
+    "shortDesc": "Cybersecurity ML model",
+    "longDesc": "Phishing Detection is a machine learning project focused on identifying phishing websites based on URL and content features. The model aims to improve cybersecurity awareness by automatically classifying suspicious links. The project highlights data analysis, feature engineering, and model evaluation techniques.",
+    "tags": ["Security", "AI", "Machine Learning"],
+    "image": "images/phishing.webp",
+    "githubLink": "https://github.com/ycnkc/phishing-detection"
+  },
+  {
+    "id": "tamagotchi",
+    "category": "developments",
+    "title": "Tamagotchi",
+    "shortDesc": "Virtual pet simulation game",
+    "longDesc": "Tamagotchi is a desktop-based virtual pet simulation game where users take care of a digital character over time. The project focuses on game logic, state management, and simple animations. It was built using JavaScript and Electron.js to deliver a lightweight desktop experience.",
+    "tags": ["Game Dev", "JavaScript", "Electron.js"],
+    "image": "images/tamagotchi.webp",
+    "gallery": [
+      "images/tamagotchi-1.webp"
+    ],
+    "githubLink": "https://github.com/ycnkc/tamagotchi"
+  },
+  {
+    "id": "weather-widget",
+    "category": "developments",
+    "title": "Weather Widget",
+    "shortDesc": "Dynamic weather dashboard",
+    "longDesc": "Weather Widget is a dynamic desktop application that displays real-time weather data using a public API. The interface updates based on user-selected locations and current conditions. Built with HTML, CSS, and Electron.js, the project emphasizes API integration and real-time data handling.",
+    "tags": ["API", "HTML&CSS", "Electron.js"],
+    "image": "images/weather-ss.webp",
+    "gallery": [
+      "images/weather-1.webp"
+    ],
+    "githubLink": "https://github.com/ycnkc/weather-widget"
+  },
+  {
+    "id": "skin-ai",
+    "category": "developments",
+    "title": "DetectDisease App",
+    "shortDesc": "Dermatology analysis tool",
+    "longDesc": "DetectDisease is a full-stack, AI-powered group project designed to analyze skin images and provide preliminary dermatological insights. The application combines a machine learning backend with a user-friendly frontend interface. The project focuses on model inference, API communication, end-to-end system integration, and collaborative development within a team environment.",
+    "tags": ["Full-stack", "AI", "Healthcare"],
+    "image": "images/skin-ai.webp",
+    "gallery": [
+      "images/skin-ai-1.webp"
+    ],
+    "githubLink": "https://github.com/DYcoded/skin-ai-app",
+    "demoLink": "https://detect-disease.vercel.app/"
+  },
+  {
+    "id": "steam-db",
+    "category": "developments",
+    "title": "Steam-like DB",
+    "shortDesc": "Relational database management",
+    "longDesc": "Steam-like DB is a relational database project inspired by digital game platforms. It focuses on designing normalized database schemas, managing relationships between entities, and writing complex SQL queries. The project demonstrates core database design and management skills.",
+    "tags": ["Database", "SQL", "Relational Design"],
+    "image": "images/database.webp",
+    "githubLink":"https://github.com/ycnkc/steamlikedatabase"
+  },
+  {
+    "id": "velore",
+    "category": "designs",
+    "title": "Velore Hotel UI",
+    "shortDesc": "Luxury booking interface",
+    "longDesc": "Velore Hotel UI is a luxury hotel booking interface concept designed to provide an elegant and seamless user experience. The project focuses on refined typography, spacious layouts, and premium visual hierarchy. Designed in Figma with attention to usability and aesthetic balance.",
+    "tags": ["UI/UX", "Hotel", "Figma"],
+    "image": "images/velore.webp",
+    "gallery": [
+      "images/velore-1.webp",
+      "images/velore-2.webp"
+    ]
+  }
 ]

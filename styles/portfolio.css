@@ -40,7 +40,7 @@
 .tab-link.active {
     background-color: var(--accent-green);
     z-index: 5;
-    padding-top: 35px;    /* Üstten daha fazla boşluk vererek uzatır */
+    padding-top: 35px;    
     margin-top: -15px;
 }
 
