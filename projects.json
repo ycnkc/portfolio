@@ -1,14 +1,14 @@
 [
-  { "id": "bloomy", "category": "developments", "title": "Bloomy", "shortDesc": "Pixel art bouquet maker", "tags": ["Pixel Art","HTML&CSS", "JS"], "image": "images/bloomy.png" },
-  { "id": "ichigo-matcha", "category": "designs", "title": "Ichigo Matcha", "shortDesc": "Visual Identity Design", "tags": ["Branding", "Figma"], "image": "images/ichigo-ss.png" },
-  { "id": "icu-stay", "category": "developments", "title": "ICU-Stay Prediction", "shortDesc": "Length of stay forecasting", "tags": ["Python", "AI"], "image": "images/icu.png" },
-  { "id": "denim-website", "category": "designs", "title": "Denim Website", "shortDesc": "E-commerce UI Concept", "tags": ["UI/UX", "Web"], "image": "images/denim.png" },
-  { "id": "ministeam", "category": "developments", "title": "Ministeam", "shortDesc": "Game distribution platform", "tags": ["Frontend", "HTML&CSS"], "image": "images/ministeam.png" },
-  { "id": "natura", "category": "designs", "title": "Natura Skincare", "shortDesc": "Skincare Brand Design", "tags": ["Figma", "UI"], "image": "images/natura.png" },
-  { "id": "phishing-detection", "category": "developments", "title": "Phishing Detection", "shortDesc": "Cyber security ML model", "tags": ["Security", "AI"], "image": "images/phishing.png" },
-  { "id": "tamagotchi", "category": "developments", "title": "Tamagotchi", "shortDesc": "Virtual pet simulation game", "tags": ["Game Dev", "JS", "Electron.js"], "image": "images/tamagotchi.png" },
-  { "id": "weather-widget", "category": "developments", "title": "Weather Widget", "shortDesc": "Dynamic weather dashboard", "tags": ["API", "HTML&CSS", "Electron.js"], "image": "images/weather-ss.png" },
-  { "id": "skin-ai", "category": "developments", "title": "Skin-AI-App", "shortDesc": "Dermatology analysis tool", "tags": ["Full-stack", "AI"], "image": "images/skin-ai.png" },
-  { "id": "steam-db", "category": "developments", "title": "Steam-like DB", "shortDesc": "Relational database management", "tags": ["Database", "SQL"], "image": "images/database.png" },
-  { "id": "velore", "category": "designs", "title": "Velore Hotel UI", "shortDesc": "Luxury booking interface", "tags": ["UI/UX", "Hotel"], "image": "images/velore.png" }
+  { "id": "bloomy", "category": "developments", "title": "Bloomy", "shortDesc": "Pixel art bouquet maker", "tags": ["Pixel Art","HTML&CSS", "JS"], "image": "images/bloomy.webp" },
+  { "id": "ichigo-matcha", "category": "designs", "title": "Ichigo Matcha", "shortDesc": "Visual Identity Design", "tags": ["Branding", "Figma"], "image": "images/ichigo-ss.webp" },
+  { "id": "icu-stay", "category": "developments", "title": "ICU-Stay Prediction", "shortDesc": "Length of stay forecasting", "tags": ["Python", "AI"], "image": "images/icu.webp" },
+  { "id": "denim-website", "category": "designs", "title": "Denim Website", "shortDesc": "E-commerce UI Concept", "tags": ["UI/UX", "Web"], "image": "images/denim.webp" },
+  { "id": "ministeam", "category": "developments", "title": "Ministeam", "shortDesc": "Game distribution platform", "tags": ["Frontend", "HTML&CSS"], "image": "images/ministeam.webp" },
+  { "id": "natura", "category": "designs", "title": "Natura Skincare", "shortDesc": "Skincare Brand Design", "tags": ["Figma", "UI"], "image": "images/natura.webp" },
+  { "id": "phishing-detection", "category": "developments", "title": "Phishing Detection", "shortDesc": "Cyber security ML model", "tags": ["Security", "AI"], "image": "images/phishing.webp" },
+  { "id": "tamagotchi", "category": "developments", "title": "Tamagotchi", "shortDesc": "Virtual pet simulation game", "tags": ["Game Dev", "JS", "Electron.js"], "image": "images/tamagotchi.webp" },
+  { "id": "weather-widget", "category": "developments", "title": "Weather Widget", "shortDesc": "Dynamic weather dashboard", "tags": ["API", "HTML&CSS", "Electron.js"], "image": "images/weather-ss.webp" },
+  { "id": "skin-ai", "category": "developments", "title": "Skin-AI-App", "shortDesc": "Dermatology analysis tool", "tags": ["Full-stack", "AI"], "image": "images/skin-ai.webp" },
+  { "id": "steam-db", "category": "developments", "title": "Steam-like DB", "shortDesc": "Relational database management", "tags": ["Database", "SQL"], "image": "images/database.webp" },
+  { "id": "velore", "category": "designs", "title": "Velore Hotel UI", "shortDesc": "Luxury booking interface", "tags": ["UI/UX", "Hotel"], "image": "images/velore.webp" }
 ]
