@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Detail | Yaren</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Dawning+of+a+New+Day&family=Jaldi:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sarina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Dawning+of+a+New+Day&family=Jaldi:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sarina&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Alice&family=Dawning+of+a+New+Day&family=Jaldi:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Sarina&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles/default.css">
     <link rel="stylesheet" href="styles/project-detail.css">
@@ -29,7 +32,7 @@
             </div>
         </div>
     </nav>
-
+        
     <main class="detail-wrapper">
         <a href="portfolio.html" class="back-btn">← Back to Portfolio</a>
 
@@ -63,8 +66,8 @@
         </div>
     </main>
 
+
     <script>
-        // URL'den ID çekme
         const params = new URLSearchParams(window.location.search);
         const id = params.get('id');
 
@@ -74,14 +77,12 @@
                 const project = projects.find(p => p.id === id);
                 
                 if (project) {
-                    // 1. Temel Bilgiler
                     document.title = `${project.title} - Project Detail`;
                     document.getElementById('project-category').innerText = project.category.toUpperCase();
                     document.getElementById('project-title').innerText = project.title;
                     document.getElementById('project-short-desc').innerText = project.shortDesc;
                     document.getElementById('project-long-desc').innerHTML = `<p>${project.longDesc}</p>`;
 
-                    // 2. Etiketler (Tags)
                     const tagsContainer = document.getElementById('tag-container');
                     project.tags.forEach(tag => {
                         const span = document.createElement('span');
@@ -90,13 +91,11 @@
                         tagsContainer.appendChild(span);
                     });
 
-                    // 3. Ana Görsel
                     const heroImgWrapper = document.getElementById('hero-image-wrapper');
                     if (project.image) {
                         heroImgWrapper.innerHTML = `<img src="${project.image}" alt="${project.title} Main Cover">`;
                     }
 
-                    // 4. Link Butonları (GitHub ve Demo kontrolü)
                     const linksContainer = document.getElementById('project-links');
                     
                     if (project.demoLink && project.demoLink.trim() !== "") {
@@ -113,7 +112,13 @@
                             </a>`;
                     }
 
-                    // 5. Galeri (Varsa oluştur, yoksa gizli kalır)
+                    if (project.dribbbleLink && project.dribbbleLink.trim() !== "") {
+                        linksContainer.innerHTML += `
+                        <a href="${project.dribbbleLink}" target="_blank" class="btn dribbble-btn">
+                                Dribbble <img src="images/dribbble-logo.svg" style="width:16px; margin-left:5px; vertical-align:middle;" alt="">
+                            </a>`;
+                    }
+
                     if (project.gallery && project.gallery.length > 0) {
                         document.getElementById('gallery-section').style.display = 'block';
                         const galleryGrid = document.getElementById('gallery-grid');

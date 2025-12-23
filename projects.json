@@ -25,7 +25,8 @@
     "gallery": [
       "images/ichigo-2.webp",
       "images/ichigo-3.webp"
-    ]
+    ],
+    "dribbbleLink":"https://dribbble.com/shots/26791230-Ichigo-Matcha-UI-UX-Design"
   },
   {
     "id": "icu-stay",
@@ -77,8 +78,9 @@
     "image": "images/natura.webp",
     "gallery": [
       "images/natura-2.webp",
-      "images/natura-2.webp"
-    ]
+      "images/natura-3.webp"
+    ],
+    "dribbbleLink":"https://dribbble.com/shots/26791197-Natura-Skincare-UI-UX-Design"
   },
   {
     "id": "phishing-detection",
@@ -98,9 +100,6 @@
     "longDesc": "Tamagotchi is a desktop-based virtual pet simulation game where users take care of a digital character over time. The project focuses on game logic, state management, and simple animations. It was built using JavaScript and Electron.js to deliver a lightweight desktop experience.",
     "tags": ["Game Dev", "JavaScript", "Electron.js"],
     "image": "images/tamagotchi.webp",
-    "gallery": [
-      "images/tamagotchi-1.webp"
-    ],
     "githubLink": "https://github.com/ycnkc/tamagotchi"
   },
   {
@@ -112,7 +111,7 @@
     "tags": ["API", "HTML&CSS", "Electron.js"],
     "image": "images/weather-ss.webp",
     "gallery": [
-      "images/weather-1.webp"
+      "images/weather-2.webp"
     ],
     "githubLink": "https://github.com/ycnkc/weather-widget"
   },
@@ -125,7 +124,7 @@
     "tags": ["Full-stack", "AI", "Healthcare"],
     "image": "images/skin-ai.webp",
     "gallery": [
-      "images/skin-ai-1.webp"
+      "images/skin-ai-2.webp"
     ],
     "githubLink": "https://github.com/DYcoded/skin-ai-app",
     "demoLink": "https://detect-disease.vercel.app/"
@@ -149,8 +148,9 @@
     "tags": ["UI/UX", "Hotel", "Figma"],
     "image": "images/velore.webp",
     "gallery": [
-      "images/velore-1.webp",
-      "images/velore-2.webp"
-    ]
+      "images/velore-2.webp",
+      "images/velore-3.webp"
+    ],
+    "dribbbleLink":"https://dribbble.com/shots/26854244-Maximalist-Hotel-Mainpage-UI-UX-Design"
   }
 ]

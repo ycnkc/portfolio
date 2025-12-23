@@ -17,7 +17,7 @@ body {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Sarabun';
     min-height: 80vh;
 }
 
@@ -159,6 +159,19 @@ body {
     color: #fff;
     transform: translateY(-3px);
 }
+
+.dribbble-btn {
+    background-color: var(--accent-mint);
+    color: var(--text-primary);
+    border: none;
+}
+
+.dribbble-btn:hover {
+    background-color: var(--text-primary);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
 
 
 .divider {
