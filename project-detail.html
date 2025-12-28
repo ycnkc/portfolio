@@ -33,7 +33,10 @@
             </div>
         </div>
     </nav>
-        
+    <section class="details">
+      <div class="tab-view">
+       <p id="tab-title">Loading...</p>
+      </div>  
     <main class="detail-wrapper">
         <a href="portfolio.html" class="back-btn">← Back to Portfolio</a>
 
@@ -65,6 +68,7 @@
                 <div class="gallery-grid" id="gallery-grid"></div>
             </div>
         </div>
+        </section>
     </main>
 
 
@@ -79,6 +83,7 @@
                 
                 if (project) {
                     document.title = `${project.title} - Project Detail`;
+                    document.getElementById('tab-title').innerText = project.title;
                     document.getElementById('project-category').innerText = project.category.toUpperCase();
                     document.getElementById('project-title').innerText = project.title;
                     document.getElementById('project-short-desc').innerText = project.shortDesc;
@@ -109,7 +114,7 @@
                     if (project.githubLink && project.githubLink.trim() !== "") {
                         linksContainer.innerHTML += `
                             <a href="${project.githubLink}" target="_blank" class="btn secondary-btn">
-                                GitHub Repo <img src="images/github-logo.svg" style="width:16px; margin-left:5px; vertical-align:middle;" alt="">
+                                GitHub Repo <img src="images/github-logo.svg" style="width:16px; margin-left:5px; vertical-align:middle; filter: invert(1)" alt="">
                             </a>`;
                     }
 
