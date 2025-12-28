@@ -163,11 +163,9 @@ body {
 }
 
 .primary-btn:hover {
-    background-color: var(--accent-mint);
-    border-color: var(--accent-mint);
-    color: var(--text-primary);
+
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(145, 234, 200, 0.4);
+    
 }
 
 .secondary-btn {
@@ -183,14 +181,13 @@ body {
 }
 
 .dribbble-btn {
-    background-color: var(--accent-mint);
-    color: var(--text-primary);
+    background-color: var(--text-primary);
+    color: #fff;
     border: none;
 }
 
 .dribbble-btn:hover {
-    background-color: var(--text-primary);
-    color: #fff;
+
     transform: translateY(-3px);
 }
 
@@ -256,29 +253,4 @@ body {
 
 .gallery-item:hover img {
     transform: scale(1.05);
-}
-
-
-@media (max-width: 968px) {
-    .project-hero {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .project-hero h1 {
-        font-size: 2.8rem;
-    }
-
-    .hero-image-wrapper {
-        height: 350px;
-        order: -1; 
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr; 
-    }
-    
-    .gallery-item {
-        height: 250px;
-    }
 }
