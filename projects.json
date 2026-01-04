@@ -4,7 +4,7 @@
     "category": "developments",
     "title": "Bloomy",
     "shortDesc": "Pixel art bouquet maker",
-    "longDesc": "Bloomy is an interactive web application that allows users to create their own pixel art flower bouquets. Users can customize bouquets by choosing different flower types, and paper colors. Built using the HTML Canvas API, the project focuses on drag-and-drop interactions, dynamic color palettes, and a cozy visual experience.",
+    "longDesc": "Bloomy is an interactive web application that allows users to create their own pixel art flower bouquets. Users can customize bouquets by choosing different flower types, and paper colors. Built using the HTML Canvas API, the project focuses on drag-and-drop interactions, dynamic color palettes, and a cozy visual experience. All of the assets created by me using Aseprite.",
     "tags": ["Pixel Art", "HTML&CSS", "JS"],
     "image": "images/bloomy.webp",
     "gallery": [
@@ -19,7 +19,7 @@
     "category": "designs",
     "title": "Ichigo Matcha",
     "shortDesc": "Visual identity design",
-    "longDesc": "Ichigo Matcha is a visual identity design project created for a modern matcha brand. The project focuses on defining a consistent color palette, typography system, and brand mood that reflects a fresh and minimal aesthetic. The design was developed in Figma with an emphasis on brand coherence and visual storytelling.",
+    "longDesc": "Ichigo Matcha is a visual identity design project created for a modern matcha brand. The project focuses on defining a consistent color palette, typography system, and brand mood that reflects a fresh and minimal aesthetic. The design was developed in Figma with an emphasis on brand coherence and visual storytelling. Assets were made using Krita.",
     "tags": ["Branding", "Figma", "Visual Identity"],
     "image": "images/ichigo-ss.webp",
     "gallery": [
@@ -97,7 +97,7 @@
     "category": "developments",
     "title": "Tamagotchi",
     "shortDesc": "Virtual pet simulation game",
-    "longDesc": "Tamagotchi is a desktop-based virtual pet simulation game where users take care of a digital character over time. The project focuses on game logic, state management, and simple animations. It was built using JavaScript and Electron.js to deliver a lightweight desktop experience.",
+    "longDesc": "Tamagotchi is a desktop-based virtual pet simulation game where users take care of a digital character over time. The project focuses on game logic, state management, and simple animations. It was built using JavaScript and Electron.js to deliver a lightweight desktop experience. Assets made with Aseprite.",
     "tags": ["Game Dev", "JavaScript", "Electron.js"],
     "image": "images/tamagotchi.webp",
     "githubLink": "https://github.com/ycnkc/tamagotchi"
@@ -107,7 +107,7 @@
     "category": "developments",
     "title": "Weather Widget",
     "shortDesc": "Dynamic weather dashboard",
-    "longDesc": "Weather Widget is a dynamic desktop application that displays real-time weather data using a public API. The interface updates based on user-selected locations and current conditions. Built with HTML, CSS, and Electron.js, the project emphasizes API integration and real-time data handling.",
+    "longDesc": "Weather Widget is a dynamic desktop application that displays real-time weather data using a public API. The interface updates based on user-selected locations and current conditions. Built with HTML, CSS, and Electron.js, the project emphasizes API integration and real-time data handling. Assets made with Aseprite.",
     "tags": ["API", "HTML&CSS", "Electron.js"],
     "image": "images/weather-ss.webp",
     "gallery": [
