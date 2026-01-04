@@ -4,7 +4,7 @@
     "category": "developments",
     "title": "Bloomy",
     "shortDesc": "Pixel art bouquet maker",
-    "longDesc": "Bloomy is an interactive web application that allows users to create their own pixel art flower bouquets. Users can customize bouquets by choosing different flower types, and paper colors. Built using the HTML Canvas API, the project focuses on drag-and-drop interactions, dynamic color palettes, and a cozy visual experience. All of the assets created by me using Aseprite.",
+    "longDesc": "Bloomy is an interactive web application that allows users to create their own pixel art flower bouquets. Users can customize bouquets by choosing different flower types, and paper colors. Built using the HTML Canvas API, the project focuses on drag-and-drop interactions, dynamic color palettes, and a cozy visual experience. All of the assets were created by me using Aseprite.",
     "tags": ["Pixel Art", "HTML&CSS", "JS"],
     "image": "images/bloomy.webp",
     "gallery": [
