@@ -152,5 +152,17 @@
       "images/velore-3.webp"
     ],
     "dribbbleLink":"https://dribbble.com/shots/26854244-Maximalist-Hotel-Mainpage-UI-UX-Design"
+  },
+  {
+    "id": "todoapi",
+    "category": "developments",
+    "title": "To-Do API",
+    "shortDesc": "Layered To-Do API",
+    "longDesc": "A robust and scalable To-Do Management API built with .NET 8, designed with a layered architecture.",
+    "tags": ["Backend", "API", ".NET"],
+    "image": "images/backend.webp",
+    "githubLink":"https://github.com/ycnkc/ToDoApi"
   }
+  
+
 ]
